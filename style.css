@@ -1,0 +1,75 @@
+/* Resetting some styles for a clean base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    padding: 0 2rem;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin: 2rem 0;
+}
+header h1 {
+    color: #0056b3;
+}
+header p {
+    color: #666;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+nav a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 2rem;
+}
+h2 {
+    color: #0056b3;
+    margin-bottom: 1rem;
+}
+ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+h3, h4 {
+    color: #333;
+    margin-top: 1rem;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+footer a {
+    color: #0056b3;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
