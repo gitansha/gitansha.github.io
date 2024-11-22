@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,99 +6,168 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Body Styles */
 body {
-    background-color: #f4f4f9;
+    background: linear-gradient(120deg, #f4f4f9, #e0eafc);
     color: #333;
-    line-height: 1.6;
+    line-height: 1.8;
     padding: 20px;
 }
 
+/* Header Section */
 header {
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .header-content h1 {
-    color: #2c3e50;
-    font-size: 2.5rem;
+    color: #34495e;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-content p {
-    color: #6c7a89;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
+/* Contact Info */
 .contact-info p {
     margin: 5px 0;
+    color: #555;
+    font-size: 1rem;
 }
 
+/* Navigation */
 nav {
     text-align: center;
     margin-bottom: 2rem;
 }
 
 nav a {
-    color: #2980b9;
+    color: #3498db;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
+    color: #e74c3c;
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
+/* Section Styling */
 section {
     margin-bottom: 2rem;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    color: #2980b9;
+    color: #e74c3c;
     margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #e74c3c;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 h3 {
-    color: #2c3e50;
-    margin-top: 1rem;
+    color: #34495e;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
 }
 
 h4 {
-    color: #34495e;
-    font-size: 1rem;
+    color: #7f8c8d;
+    font-size: 1.2rem;
     margin-top: 10px;
+    font-weight: normal;
 }
 
+/* Lists */
 ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 30px;
+    color: #555;
+    line-height: 1.6;
 }
 
+/* Skills Section */
 .skills-content {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .skills-list {
     flex: 1;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
+.skills-list ul {
+    background: #f4f4f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skills-list ul:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 1rem 0;
-    background-color: #2c3e50;
+    padding: 1.5rem 0;
+    background: #34495e;
     color: white;
     font-size: 0.9rem;
+    border-top: 5px solid #e74c3c;
 }
 
 footer a {
     color: #ecf0f1;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #e74c3c;
+    transform: scale(1.1);
+}
+
+/* Add Fun Animations */
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 5px #e74c3c;
+    }
+    50% {
+        text-shadow: 0px 0px 15px #e74c3c, 0px 0px 25px #f1c40f;
+    }
+    100% {
+        text-shadow: 0px 0px 5px #e74c3c;
+    }
+}
+
+/* Apply Glow Effect to Header */
+.header-content h1:hover {
+    animation: glow 2s infinite ease-in-out;
 }
