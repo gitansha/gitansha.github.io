@@ -1,125 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gitansha Aggarwal - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <h1>Gitansha Aggarwal</h1>
-            <p>Data Analyst | Cloud-based ML-Ops Specialist | Azure Enthusiast</p>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:gitansha001@e.ntu.edu.sg">gitansha001@e.ntu.edu.sg</a></p>
-                <p><a href="https://www.linkedin.com/in/gitansha-aggarwal" target="_blank">LinkedIn</a></p>
-            </div>
-        </div>
-    </header>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Modern and readable font */
+}
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#extra">Extra-Curricular</a>
-    </nav>
+/* Body Styles */
+body {
+    background: linear-gradient(120deg, #f8f9fa, #ffffff); /* Light gradient for cleanliness */
+    color: #2e3a59; /* Muted dark blue for primary text */
+    line-height: 1.8;
+    padding: 20px;
+}
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-content">
-            <div class="skills-list">
-                <h3>Technical Skills</h3>
-                <p>Python, PySpark, R, Knime, T-SQL, Docker, Git, Markdown, HTML</p>
-                <h3>Software & Tools</h3>
-                <p>Azure Cloud & Services, Azure DevOps, Power BI, Conda</p>
-            </div>
-            <div class="skills-list">
-                <h3>Soft Skills</h3>
-                <p>Team Management, Data Analysis, Cross-functional Collaboration, Project Coordination</p>
-            </div>
-        </div>
-    </section>
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="experience-item">
-            <h3>Tiger Analytics, India</h3>
-            <h4>Senior Analyst - MLE (Jul 2022 – Jul 2024)</h4>
-            <ul>
-                <li>Integrated client ETL framework in PySpark, reducing processing time by 25%.</li>
-                <li>Led a team to automate data solutions with Azure, cutting manual intervention by 30%.</li>
-            </ul>
-            <h4>Analyst - MLE (Jul 2022 – Jul 2023)</h4>
-            <ul>
-                <li>Developed Azure data migration pipelines, ensuring 98% uptime and a 40% reduction in deployment time.</li>
-                <li>Published web scraping results for 60+ websites, improving operational efficiency by 55%.</li>
-            </ul>
-            <h4>Intern - MLE (Jan 2022 – Jul 2022)</h4>
-            <ul>
-                <li>Implemented regression models for a house price prediction project, achieving 95% accuracy.</li>
-                <li>Assisted in Docker-based deployments, reducing deployment time by 20%.</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <h3>Spikewell, India</h3>
-            <h4>Intern - Data Science (Aug 2021 – Nov 2021)</h4>
-            <ul>
-                <li>Developed automated data filing system using UiPath, enhancing communication accuracy by 25%.</li>
-            </ul>
-        </div>
-    </section>
+.header-content h1 {
+    color: #1e88e5; /* Calm blue for primary heading */
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Data Analysis for Banking Churn</h3>
-            <p>Led data processing and model development, achieving 85% accuracy and formulating actionable insights.</p>
-        </div>
-        <div class="project-item">
-            <h3>Credit Card Fraud Detection</h3>
-            <p>Enhanced accuracy to 98% by leveraging logistic regression, decision trees, and sampling techniques.</p>
-        </div>
-         </div>
-        <div class="project-item">
-        <h3>Tableau Visualizations</h3>
-        <ul>
-            <li><a href="https://gitansha.github.io/Happiness_index_dashboard/" target="_blank">Happiness Index Report</a></li>
-            <li><a href="https://gitansha.github.io/Netflix_dashboard/" target="_blank">Netflix Data Visualisation</a></li>
-        </ul>
-    </div>       
-    </section>
+.header-content p {
+    color: #627d98; /* Muted gray-blue for subheading */
+    font-size: 1.2rem;
+}
 
-    <!-- Education and Certifications Section -->
-    <section id="education">
-        <h2>Education and Certifications</h2>
-        <ul>
-            <li><strong>MSc Business Analytics</strong> – Nanyang Technological University, Singapore (Expected May 2025)</li>
-            <li><strong>B.Tech. Computer Science & Engineering</strong> – IIIT Bhubaneswar, India</li>
-            <li><strong>Certifications:</strong> Project Management courses from UC Irvine (via Coursera)</li>
-        </ul>
-    </section>
+.contact-info p {
+    margin: 10px 0;
+    color: #2e3a59;
+}
 
-    <!-- Extra-Curricular Section -->
-    <section id="extra">
-        <h2>Extra-Curricular and Interests</h2>
-        <ul>
-            <li>Basketball: College team, 2nd runner-up in multiple inter-college tournaments.</li>
-            <li>Dance: Member of Graduate Students' Indian Dance Crew, with a diploma in Kathak.</li>
-        </ul>
-    </section>
+.contact-info a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Gitansha Aggarwal | <a href="mailto:gitansha001@e.ntu.edu.sg">Contact Me</a></p>
-    </footer>
+.contact-info a:hover {
+    text-decoration: underline;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+nav a {
+    color: #1565c0; /* Muted blue for links */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #1e88e5; /* Brighter blue for hover */
+    transform: scale(1.1); /* Slight interaction effect */
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 3rem;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15); /* Slight lift on hover */
+}
+
+h2 {
+    color: #1565c0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #64b5f6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #2e3a59;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+h4 {
+    color: #5c6b7c;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* List Styles */
+ul {
+    list-style: disc inside;
+    color: #5c6b7c;
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skills-list p {
+    background: #f4f4f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #2e3a59;
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-top: 4px solid #1565c0;
+}
+
+footer a {
+    color: #90caf9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #64b5f6;
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #1565c0;
+    transform: scale(1.05);
+}
