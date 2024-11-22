@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif; /* Modern and professional font */
+    font-family: 'Inter', sans-serif; /* Modern and readable font */
 }
 
 /* Body Styles */
 body {
-    background: linear-gradient(120deg, #f0f4f8, #ffffff); /* Soft gradient for a clean look */
-    color: #2e3a59; /* Muted dark blue for text */
+    background: linear-gradient(120deg, #f8f9fa, #ffffff); /* Light gradient for cleanliness */
+    color: #2e3a59; /* Muted dark blue for primary text */
     line-height: 1.8;
     padding: 20px;
 }
@@ -21,66 +21,73 @@ header {
 }
 
 .header-content h1 {
-    color: #1e88e5; /* Soothing blue tone */
-    font-size: 3.5rem;
+    color: #1e88e5; /* Calm blue for primary heading */
+    font-size: 3rem;
     font-weight: bold;
-    letter-spacing: 1.5px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
 
 .header-content p {
-    color: #627d98; /* Muted gray-blue for secondary text */
+    color: #627d98; /* Muted gray-blue for subheading */
     font-size: 1.2rem;
-    margin-top: 10px;
 }
 
-/* Contact Info */
 .contact-info p {
-    margin: 5px 0;
+    margin: 10px 0;
     color: #2e3a59;
-    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 /* Navigation */
 nav {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 nav a {
-    color: #1e88e5; /* Primary blue color */
+    color: #1565c0; /* Muted blue for links */
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
+    margin: 0 20px;
     font-size: 1rem;
+    font-weight: bold;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
-    color: #1565c0; /* Darker blue for hover effect */
-    transform: scale(1.1); /* Slight scaling for interaction feedback */
+    color: #1e88e5; /* Brighter blue for hover */
+    transform: scale(1.1); /* Slight interaction effect */
 }
 
 /* Section Styling */
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     padding: 30px;
     background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
-    transform: translateY(-8px);
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15); /* Slight lift on hover */
 }
 
 h2 {
-    color: #1565c0; /* Elegant dark blue for headings */
+    color: #1565c0;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    font-size: 2.2rem;
-    border-bottom: 3px solid #64b5f6; /* Complementary accent */
+    border-bottom: 2px solid #64b5f6;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -88,78 +95,65 @@ h2 {
 h3 {
     color: #2e3a59;
     margin-top: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 h4 {
-    color: #5c6b7c; /* Muted tone for subheadings */
-    font-size: 1.2rem;
-    margin-top: 10px;
-    font-weight: normal;
-}
-
-/* Lists */
-ul {
-    list-style-type: disc;
-    padding-left: 30px;
     color: #5c6b7c;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
 }
 
-/* Skills Section */
+/* List Styles */
+ul {
+    list-style: disc inside;
+    color: #5c6b7c;
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
 .skills-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
-.skills-list {
-    flex: 1;
-    padding: 0 15px;
-}
-
-.skills-list ul {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.skills-list ul:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
+.skills-list p {
+    background: #f4f4f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 2rem 0;
-    background: #2e3a59; /* Deep blue-gray for a strong footer */
+    background: #2e3a59;
     color: #ffffff;
     font-size: 0.9rem;
-    border-top: 5px solid #1565c0; /* Accent border for footer */
+    border-top: 4px solid #1565c0;
 }
 
 footer a {
-    color: #90caf9; /* Soft light blue for footer links */
+    color: #90caf9;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #64b5f6; /* Slightly darker blue on hover */
+    color: #64b5f6;
+    text-decoration: underline;
 }
 
-/* Buttons (For Fun Interaction) */
+/* Buttons */
 button {
     background: #1e88e5;
-    color: #fff;
+    color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 1rem;
+    border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
@@ -167,21 +161,5 @@ button {
 
 button:hover {
     background: #1565c0;
-    transform: scale(1.05); /* Slight scaling on hover */
-}
-
-/* Add Interactive Fun with Subtle Animations */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-section {
-    animation: fadeIn 0.5s ease-in-out;
+    transform: scale(1.05);
 }
