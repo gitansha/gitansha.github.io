@@ -4,189 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gitansha Aggarwal - Portfolio</title>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script> -->
-
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-10">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <div>
-                        <a href="#" class="flex items-center py-4">
-                            <span class="font-semibold text-gray-700 text-lg">Gitansha Aggarwal</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-1">
-                    <a href="#home" class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">Home</a>
-                    <a href="#skills" class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">Skills</a>
-                    <a href="#experience" class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">Experience</a>
-                    <a href="#projects" class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">Projects</a>
-                    <a href="#education" class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">Education</a>
-                </div>
+<body>
+    <!-- Navigation with progress bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-text">GA</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="themeToggle"></i>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-24 pb-12 px-4">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">Gitansha Aggarwal</h1>
-                <p class="text-xl text-gray-600 mb-8">Data Analyst | Cloud-based ML-Ops Specialist | Azure Enthusiast</p>
-                <div class="flex justify-center space-x-4 mb-8">
-                    <a href="mailto:gitansha001@e.ntu.edu.sg" class="text-purple-600 hover:text-purple-700">gitansha001@e.ntu.edu.sg</a>
-                    <a href="https://www.linkedin.com/in/gitansha-aggarwal" target="_blank" class="text-purple-600 hover:text-purple-700">LinkedIn Profile</a>
+    <!-- Hero Section with particle background -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <div class="profile-card">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=gitansha" alt="Profile" class="profile-img">
+                <h1>Gitansha Aggarwal</h1>
+                <div class="typewriter">
+                    <span id="typed"></span>
                 </div>
-                <a href="#contact" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-12 bg-white px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Skills</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold text-xl mb-4 text-purple-600">Technical Skills</h3>
-                    <p class="text-gray-600">Python, PySpark, R, Knime, T-SQL, Docker, Git, Markdown, HTML</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold text-xl mb-4 text-purple-600">Software & Tools</h3>
-                    <p class="text-gray-600">Azure Cloud & Services, Azure DevOps, Power BI, Conda</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold text-xl mb-4 text-purple-600">Soft Skills</h3>
-                    <p class="text-gray-600">Team Management, Data Analysis, Cross-functional Collaboration, Project Coordination</p>
+                <div class="social-links">
+                    <a href="mailto:gitansha001@e.ntu.edu.sg" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gitansha-aggarwal" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/gitansha" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-12 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Professional Experience</h2>
-            <div class="space-y-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold text-purple-600 mb-4">Tiger Analytics, India</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Senior Analyst - MLE (Jul 2022 – Jul 2024)</h4>
-                            <ul class="list-disc pl-6 text-gray-600 space-y-2">
-                                <li>Integrated client ETL framework in PySpark, reducing processing time by 25%.</li>
-                                <li>Led a team to automate data solutions with Azure, cutting manual intervention by 30%.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Analyst - MLE (Jul 2022 – Jul 2023)</h4>
-                            <ul class="list-disc pl-6 text-gray-600 space-y-2">
-                                <li>Developed Azure data migration pipelines, ensuring 98% uptime and a 40% reduction in deployment time.</li>
-                                <li>Published web scraping results for 60+ websites, improving operational efficiency by 55%.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Intern - MLE (Jan 2022 – Jul 2022)</h4>
-                            <ul class="list-disc pl-6 text-gray-600 space-y-2">
-                                <li>Implemented regression models for a house price prediction project, achieving 95% accuracy.</li>
-                                <li>Assisted in Docker-based deployments, reducing deployment time by 20%.</li>
-                            </ul>
+    <!-- Skills Section with animated cards -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-category" data-aos="fade-right">
+                <div class="skill-header">
+                    <i class="fas fa-code"></i>
+                    <h3>Technical Skills</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
                         </div>
                     </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold text-purple-600 mb-4">Spikewell, India</h3>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Intern - Data Science (Aug 2021 – Nov 2021)</h4>
-                    <ul class="list-disc pl-6 text-gray-600">
-                        <li>Developed automated data filing system using UiPath, enhancing communication accuracy by 25%.</li>
-                    </ul>
+                    <!-- Add more skills with progress bars -->
                 </div>
             </div>
+            <!-- Add more skill categories -->
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-12 bg-white px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Projects</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-4 text-purple-600">Data Analysis for Banking Churn</h3>
-                        <p class="text-gray-600">Led data processing and model development, achieving 85% accuracy and formulating actionable insights.</p>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-4 text-purple-600">Credit Card Fraud Detection</h3>
-                        <p class="text-gray-600">Enhanced accuracy to 98% by leveraging logistic regression, decision trees, and sampling techniques.</p>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-4 text-purple-600">Tableau Visualizations</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li><a href="https://gitansha.github.io/Happiness_index_dashboard/" class="text-purple-600 hover:text-purple-700" target="_blank">Happiness Index Report</a></li>
-                            <li><a href="https://gitansha.github.io/Netflix_dashboard/" class="text-purple-600 hover:text-purple-700" target="_blank">Netflix Data Visualization</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience-section">
+        <h2 class="section-title" data-aos="fade-up">Professional Journey</h2>
+        <div class="timeline">
+            <!-- Timeline items will be populated via JavaScript -->
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-12 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Education and Certifications</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="space-y-4">
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-600">MSc Business Analytics</h3>
-                        <p class="text-gray-600">Nanyang Technological University, Singapore (Expected May 2025)</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-600">B.Tech. Computer Science & Engineering</h3>
-                        <p class="text-gray-600">IIIT Bhubaneswar, India</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-600">Certifications</h3>
-                        <p class="text-gray-600">Project Management courses from UC Irvine (via Coursera)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Extra-Curricular Activities</h2>
-                <ul class="space-y-2 text-gray-600">
-                    <li>🏀 Basketball: College team, 2nd runner-up in multiple inter-college tournaments.</li>
-                    <li>💃 Dance: Member of Graduate Students' Indian Dance Crew, with a diploma in Kathak.</li>
-                </ul>
-            </div>
+    <!-- Interactive Projects Grid -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- Project cards will be populated via JavaScript -->
         </div>
+    </section>
+
+    <!-- Education Section with parallax -->
+    <section id="education" class="education-section parallax">
+        <div class="education-content">
+            <h2 class="section-title" data-aos="fade-up">Education & Certifications</h2>
+            <!-- Education cards will be populated via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+        <form id="contactForm" class="contact-form" data-aos="fade-up">
+            <div class="form-group">
+                <input type="text" id="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <p>&copy; 2024 Gitansha Aggarwal. All rights reserved.</p>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="https://www.linkedin.com/in/gitansha-aggarwal" target="_blank" class="hover:text-purple-400 transition duration-300">LinkedIn</a>
-                    <a href="mailto:gitansha001@e.ntu.edu.sg" class="hover:text-purple-400 transition duration-300">Email</a>
-                </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2024 Gitansha Aggarwal. Crafted with <i class="fas fa-heart"></i></p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Use</a>
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
