@@ -14,7 +14,7 @@
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
-                <span class="logo-text">GA</span>
+                <span class="logo-text">Gitansha</span>
             </div>
             <div class="nav-links" id="navLinks">
                 <a href="#home" class="nav-link active">Home</a>
@@ -22,14 +22,7 @@
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#education" class="nav-link">Education</a>
-            </div>
-            <div class="theme-toggle">
-                <i class="fas fa-moon" id="themeToggle"></i>
-            </div>
-            <div class="menu-toggle" id="menuToggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
     </nav>
@@ -39,12 +32,14 @@
         <div id="particles-js"></div>
         <div class="hero-content" data-aos="fade-up">
             <div class="profile-card">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=gitansha" alt="Profile" class="profile-img">
+                <!-- <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=gitansha" alt="Profile" class="profile-img"> -->
+                <img src="./statics/IMG_20240409_162059.jpg" alt="Profile" class="profile-img">
                 <h1>Gitansha Aggarwal</h1>
                 <div class="typewriter">
                     <span id="typed"></span>
                 </div>
-                <div class="social-links">
+                <p>Business Analytics Student | Machine Learning Engineer |  Python | Azure | Data Solutions</p>
+                <div class="social-links">  <!-- missing social links class-->
                     <a href="mailto:gitansha001@e.ntu.edu.sg" class="social-link">
                         <i class="fas fa-envelope"></i>
                     </a>
@@ -55,30 +50,32 @@
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
+                <a href="./statics/Gitansha resume.pdf" download class="btn btn-primary">Download My Resume for Full Details</a>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section with animated cards -->
+    <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
         <div class="skills-container">
             <div class="skill-category" data-aos="fade-right">
-                <div class="skill-header">
-                    <i class="fas fa-code"></i>
-                    <h3>Technical Skills</h3>
-                </div>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span>Python</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <!-- Add more skills with progress bars -->
-                </div>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Python, PySpark</li>
+                    <li>SQL, T-SQL</li>
+                    <li>Azure Cloud, Azure DevOps</li>
+                    <li>Docker, CI/CD Pipelines</li>
+                </ul>
             </div>
-            <!-- Add more skill categories -->
+            <div class="skill-category" data-aos="fade-left">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Team Management</li>
+                    <li>Project Coordination</li>
+                    <li>Cross-functional Collaboration</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -86,23 +83,55 @@
     <section id="experience" class="experience-section">
         <h2 class="section-title" data-aos="fade-up">Professional Journey</h2>
         <div class="timeline">
-            <!-- Timeline items will be populated via JavaScript -->
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>Tiger Analytics, India</h3>
+                <p><strong>Senior Analyst - MLE</strong> (Jul 2023 – Jul 2024)</p>
+                <ul>
+                    <li>Reduced data processing time by 25% through PySpark optimizations.</li>
+                    <li>Automated data solutions with Azure Data Factory, saving 4+ hours/week.</li>
+                    <li>Mentored a team of two members, enhancing collaborative workflows and team productivity.</li>
+                </ul>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>Tiger Analytics, India</h3>
+                <p><strong>Analyst - MLE</strong> (Jul 2022 – Jul 2023)</p>
+                <ul>
+                    <li>Designed automation pipelines, reducing deployment time by 40%.</li>
+                    <li>Developed dashboards for web scraping results, improving efficiency by 55%.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- Interactive Projects Grid -->
+    <!-- Projects Section : 
+     TODO::: ADD more projects specially teh visualisations-->
     <section id="projects" class="projects-section">
         <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
         <div class="projects-grid">
-            <!-- Project cards will be populated via JavaScript -->
+            <div class="project-card" data-aos="fade-up">
+                <h3>EstiMATE - Business Valuation Platform</h3>
+                <p>Developed a platform integrating Python, React, and ARIMA models for stock trend predictions, empowering users with financial insights. This platform has been used by over 500 users, helping them analyze financial trends and make data-driven investment decisions confidently.</p>
+                <a href="#" class="btn btn-secondary">Learn More</a> <!--to do : add link and video-->
+            </div>
+            <div class="project-card" data-aos="fade-up">
+                <h3>Credit Card Fraud Detection</h3>
+                <p>Achieved 98% accuracy using machine learning techniques like SMOTE and decision trees. Processed a dataset of over 284,000 transactions, identifying fraudulent activity with precision.</p>
+                <a href="#" class="btn btn-secondary">Learn More</a> <!--to do : add link and video-->
+            </div>
         </div>
     </section>
 
-    <!-- Education Section with parallax -->
+    <!-- Education Section -->
     <section id="education" class="education-section parallax">
-        <div class="education-content">
-            <h2 class="section-title" data-aos="fade-up">Education & Certifications</h2>
-            <!-- Education cards will be populated via JavaScript -->
+        <h2 class="section-title" data-aos="fade-up">Education & Certifications</h2>
+        <div class="education-item" data-aos="fade-up">
+            <h3>MSc in Business Analytics</h3>
+            <p>Nanyang Technological University, Singapore (Jul 2024 – May 2025)</p>
+            <p>Key coursework: Analytics Strategy in Business, Aplications of Statistics, AI & Big Data in Business, Database Management & Visualisation </p>
+        </div>
+        <div class="education-item" data-aos="fade-up">
+            <h3>B.Tech. in Computer Science</h3>
+            <p>IIIT Bhubaneswar, India (Aug 2018 – Jun 2022)</p>
         </div>
     </section>
 
@@ -132,13 +161,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-text">
-                <p>&copy; 2024 Gitansha Aggarwal. Crafted with <i class="fas fa-heart"></i></p>
-            </div>
-            <div class="footer-links">
-                <a href="#" class="footer-link">Privacy Policy</a>
-                <a href="#" class="footer-link">Terms of Use</a>
-            </div>
+            <p>&copy; 2024 Gitansha Aggarwal. Crafted with <i class="fas fa-heart"></i></p>
         </div>
     </footer>
 

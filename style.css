@@ -8,6 +8,7 @@
     --text-light: #2d3748;
     --text-dark: #e2e8f0;
     --transition: all 0.3s ease;
+    --hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Dark Theme Variables */
@@ -34,14 +35,19 @@ body {
     overflow-x: hidden;
 }
 
-/* Progress Bar */
 .progress-bar {
     position: fixed;
     top: 0;
     left: 0;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    height: 4px;
+    background: #f0f0f0;
+    width: 100%;
     z-index: 1000;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
     transition: width 0.3s ease;
 }
 
@@ -53,6 +59,7 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
 
@@ -66,7 +73,7 @@ body {
 }
 
 .logo-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
@@ -129,7 +136,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--hover-shadow);
     backdrop-filter: blur(10px);
     max-width: 600px;
 }
@@ -180,6 +187,7 @@ body {
 
 .skill-category:hover {
     transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
 }
 
 /* Experience Timeline */
@@ -201,12 +209,38 @@ body {
     margin-left: -1px;
 }
 
+.timeline-item {
+    margin: 2rem 0;
+}
+
+.timeline-item:nth-child(odd) {
+    text-align: right;
+    padding-right: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    text-align: left;
+    padding-left: 50%;
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem;
+}
+
+.project-card {
+    background: var(--background-light);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--hover-shadow);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 /* Contact Form */
