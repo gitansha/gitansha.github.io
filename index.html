@@ -123,17 +123,66 @@
     <section id="projects" class="projects-section">
         <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
         <div class="projects-grid">
+            
             <div class="project-card" data-aos="fade-up">
-                <h3>EstiMATE - Business Valuation Platform</h3>
-                <p>Designed and developed an advanced business valuation platform that combines Python, React, and cutting-edge ARIMA models to forecast stock trends with precision. The platform features interactive visualizations and an intuitive interface, making complex financial data accessible and actionable for users.</p>
+                <h3>Credit Card Fraud Detection</h3>
+                <p>Achieved 98% accuracy using machine learning techniques like SMOTE and decision trees. Processed a dataset of over 284,000 transactions, identifying fraudulent activity with precision.</p>
+                <a href="#" class="btn btn-secondary">Learn More</a> <!--to do : add link and video-->
+            </div>
+        </div>
+    </section>
 
-                    <p>To elevate decision-making capabilities, I integrated real-time sentiment analysis using the Stocknews API, enabling users to assess bullish and bearish market trends instantly. The platform also surfaces the top three most relevant company headlines, each linked to verified sources, ensuring users receive accurate data with meaningful context to navigate market dynamics effectively.</p>
+
+    <section id="projects" class="projects-section section-gradient">
+        <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-media">
+                    <!-- Replace the src with your actual image path -->
+                    <img src="./statics/Estimate.png" alt="EstiMATE Platform Preview" class="project-image">
+                    <div class="project-media-overlay">
+                        <button class="play-button" onclick="openVideoModal('estimate-video')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>EstiMATE - Business Valuation Platform</h3>
+                <p>Designed and developed an advanced business valuation platform that combines Python, React, and cutting-edge ARIMA models to forecast stock trends with precision. The platform features interactive visualizations and an intuitive interface, making complex financial data accessible and actionable for users.</p>
+                            <br>
+                    <p>To elevate decision-making capabilities, I integrated real-time sentiment analysis using the Stocknews API, enabling users to assess bullish and bearish market trends instantly. The platform also surfaces the top three most relevant company headlines, each linked to verified sources, ensuring users receive accurate data with meaningful context to navigate market dynamics effectively.</p><br>
                     
                     <p>By seamlessly blending predictive analytics, real-time sentiment evaluation, and user-centric design, the platform transforms raw data into valuable insights. This innovative tool empowers users to make confident and informed financial decisions, showcasing the potential of advanced technology to address real-world challenges.</p>
-                <a href="https://github.com/jaosy/AN6002_Business_Valuation_Project" class="btn btn-secondary">Learn More</a>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">ARIMA</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/jaosy/AN6002_Business_Valuation_Project" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link" target="_blank"> <!-- Need to think of something for thsi-->
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
             </div>
+            <!-- Project 3 -->
             <div class="project-card" data-aos="fade-up">
-                <h3>Tableau Dashboards</h3>
+                <div class="project-media">
+                    <!-- Replace the src with your actual image path -->
+                    <img src="" alt="Tableau visualisations" class="project-image">
+                    <div class="project-media-overlay">
+                        <button class="play-button" onclick="openVideoModal('estimate-video')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Tableau Dashboards</h3>
                 <h4>Happiness Index Dashboard (Team Project) 🌏 </h4> 
                     <p>
                     Collaborated with a dynamic team to craft an interactive Tableau dashboard that brings the global Happiness Index to life! This user-friendly tool dives deep into a decade of data, uncovering key factors influencing well-being across nations. From visualizing trends to highlighting intriguing correlations, the dashboard provides actionable insights in an engaging and accessible way.</p>
@@ -142,12 +191,57 @@
                     <h4>Netflix Content Analysis Dashboard 🎥 </h4> 
                     <p>
                     Designed an insightful Tableau dashboard that unlocks the secrets of Netflix's content universe! With detailed visualizations of genre distributions, release trends, and regional availability, this dashboard empowers users to explore content patterns and preferences. Perfect for media enthusiasts and decision-makers aiming to understand what drives audience engagement.</p>
-                <a href="https://public.tableau.com/app/profile/gitansha.aggarwal/viz/" class="btn btn-secondary">View Dashboard</a> 
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Tableau</span>
+                        <span class="tech-tag">Visualizations</span>
+                    </div>
+                    <div class="project-links">     
+                        <a href="https://public.tableau.com/app/profile/gitansha.aggarwal/viz/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Visit Viz
+                        </a>
+                    </div>
+                </div>
             </div>
+    
+            <!-- Project 2 -->
             <div class="project-card" data-aos="fade-up">
-                <h3>Credit Card Fraud Detection</h3>
-                <p>Achieved 98% accuracy using machine learning techniques like SMOTE and decision trees. Processed a dataset of over 284,000 transactions, identifying fraudulent activity with precision.</p>
-                <a href="#" class="btn btn-secondary">Learn More</a> <!--to do : add link and video-->
+                <div class="project-media">
+                    <!-- Replace the src with your actual image path -->
+                    <img src="/project-images/fraud-detection.jpg" alt="Fraud Detection System Preview" class="project-image">
+                    <div class="project-media-overlay">
+                        <button class="play-button" onclick="openVideoModal('fraud-video')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Credit Card Fraud Detection</h3>
+                    <p>Achieved 98% accuracy using machine learning techniques like SMOTE and decision trees. Processed a dataset of over 284,000 transactions.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SMOTE</span>
+                        <span class="tech-tag">Decision Trees</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Video Modal -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="video-container">
+                    <!-- Video iframe will be inserted here via JavaScript -->
+                </div>
             </div>
         </div>
     </section>
