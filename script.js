@@ -27,7 +27,9 @@ const videoContainer = modal.querySelector('.video-container');
     // Replace 'YOUR_VIDEO_URL' with your actual video URLs
     const videoUrls = {
         'estimate-video': 'https://drive.google.com/file/d/1ggEP0K2_Z_5KIQpZ7opCFBK-U0-alwKN/view',
-        'fraud-video': 'YOUR_VIDEO_URL_2'
+        'fraud-video': 'YOUR_VIDEO_URL_2',
+        'metermatrix-video': 'YOUR_METERMATRIX_VIDEO_URL',
+        'journey-video': 'YOUR_NTU_SIAE_VIDEO_URL'  // Add your NTU/Singapore Airlines video URL here
     };
     
     // Create iframe for video
@@ -60,4 +62,21 @@ window.addEventListener('click', (event) => {
     }
 });
 
-//
+// Add this function to your existing script.js
+function toggleCaseStudy(id) {
+    const element = document.getElementById(id);
+    element.classList.toggle('hidden');
+    
+    const button = event.currentTarget;
+    const icon = button.querySelector('i');
+    
+    if (element.classList.contains('hidden')) {
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+        button.querySelector('span').textContent = 'View Detailed Case Study';
+    } else {
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+        button.querySelector('span').textContent = 'Hide Detailed Case Study';
+    }
+}

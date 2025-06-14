@@ -58,7 +58,7 @@ body {
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    z-index: 100;
+    z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
@@ -231,7 +231,8 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 80px; /* Add padding to account for fixed navbar */
     position: relative;
     display: flex;
     align-items: center;
@@ -641,6 +642,65 @@ section {
     color: var(--primary-color);
 }
 
+/* Add these styles for the experience testimonial */
+.experience-testimonial {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--accent-color);
+    position: relative;
+}
+
+.quote-icon {
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.testimonial-content {
+    position: relative;
+    padding-left: 2.5rem;  /* Increased padding to accommodate quote icon */
+}
+
+.quote-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+}
+
+.testimonial-content p {
+    position: relative;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.author-title {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .experience-company {
@@ -842,6 +902,97 @@ section {
     height: 100%;
 }
 
+/* Add these styles for the case study toggle */
+.case-study-toggle {
+    margin: 1.5rem 0;
+}
+
+.toggle-case-study {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    width: fit-content;
+}
+
+.toggle-case-study:hover {
+    background: rgba(107, 70, 193, 0.1);
+}
+
+.case-study-details {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: rgba(107, 70, 193, 0.05);
+    border-left: 3px solid var(--primary-color);
+}
+
+.case-section {
+    margin-bottom: 1.5rem;
+}
+
+.case-section:last-child {
+    margin-bottom: 0;
+}
+
+.case-section h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add these styles to your existing CSS */
+.skill-bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-name {
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: rgba(107, 70, 193, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 5px;
+    color: transparent;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    transition: width 1s ease-in-out;
+}
+
+.skill-item:hover .skill-level {
+    color: white;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .project-media {
@@ -855,4 +1006,66 @@ section {
     .project-links {
         flex-direction: column;
     }
+}
+
+/* Add these styles for the enhanced testimonials section */
+.testimonials-section {
+    margin: 4rem 0;
+    padding: 2rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--accent-color);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.professional-summary {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin: 1.5rem 0;
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: var(--hover-shadow);
+    backdrop-filter: blur(10px);
+    text-align: left;
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+}
+
+.professional-summary:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.95);
 }
