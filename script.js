@@ -28,6 +28,7 @@ const videoContainer = modal.querySelector('.video-container');
     const videoUrls = {
         'estimate-video': 'https://drive.google.com/file/d/1ggEP0K2_Z_5KIQpZ7opCFBK-U0-alwKN/view',
         'fraud-video': 'YOUR_VIDEO_URL_2',
+        'tableau': 'https://public.tableau.com/app/profile/gitansha.aggarwal/vizzes',
         'metermatrix-video': 'YOUR_METERMATRIX_VIDEO_URL',
         'journey-video': 'YOUR_NTU_SIAE_VIDEO_URL'  // Add your NTU/Singapore Airlines video URL here
     };
