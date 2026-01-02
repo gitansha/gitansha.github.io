@@ -18,9 +18,10 @@
             </div>
             <div class="nav-links" id="navLinks">
                 <a href="#home" class="nav-link active">Home</a>
-                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#beyond-code" class="nav-link">Beyond Code</a>
                 <a href="#education" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
@@ -34,13 +35,9 @@
             <div class="profile-card">
                 <img src="./statics/IMG_20240409_162059.jpg" alt="Profile" class="profile-img">
                 <h1>Gitansha Aggarwal</h1>
-                <!-- <div class="typewriter">
-                    <span id="typed"></span>
-                </div> -->
-                <!-- Add this professional summary -->
                 <p class="professional-summary">Business analytics professional with 2+ years of experience delivering data-driven solutions that drive business growth. Specializing in ML engineering, data automation, and cloud-based analytics solutions with quantifiable business impact.</p>
                 <p>Business Analytics Student | Machine Learning Engineer | Python | Azure | Data Solutions</p>
-                <div class="social-links">  <!-- missing social links class-->
+                <div class="social-links">
                     <a href="mailto:gitansha001@e.ntu.edu.sg" class="social-link">
                         <i class="fas fa-envelope"></i>
                     </a>
@@ -56,211 +53,345 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
-        <div class="skills-container">
-            <div class="skill-category" data-aos="fade-right">
-                <h3>Technical Skills</h3>
-                <div class="skill-bar-container">
-                    <div class="skill-item">
-                        <span class="skill-name">Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%;">Expert</div>
-                        </div>
+    <!-- About Section with Skills -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="section-title" data-aos="fade-up">A Bit About Me</h2>
+            
+            <div class="about-content" data-aos="fade-up">
+                <div class="about-text">
+                    <p>👋 Hey there! I'm Gitansha - a data enthusiast who loves turning messy datasets into meaningful stories and building AI solutions that actually work in the real world (not just in notebooks!).</p>
+                    
+                    <p>💡 Currently wrapping up my Master's at NTU Singapore, where I've been deep in the world of GenAI and ML engineering. My sweet spot? Taking complex business problems and crafting elegant data solutions that make people's lives easier.</p>
+                    
+                    <p>🚀 When I'm not debugging code or optimizing pipelines, you'll find me mentoring women in tech through Women Devs SG, writing about my technical adventures, or creating content that makes tech more accessible.</p>
+                    
+                    <p>✨ What drives me? The "aha!" moment when an AI model finally clicks, the satisfaction of automating tedious tasks, and the joy of building tools that people actually want to use.</p>
+                </div>
+            </div>
+
+            <h3 class="skills-subtitle" data-aos="fade-up">What I Bring to the Table</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">🤖</div>
+                    <h4>AI & Machine Learning</h4>
+                    <p>Building production-ready ML systems, from data pipelines to model deployment. Specialized in NLP, GenAI, and practical ML applications.</p>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>LLMs</span>
+                        <span>TensorFlow</span>
+                        <span>Hugging Face</span>
                     </div>
-                    <div class="skill-item">
-                        <span class="skill-name">SQL/T-SQL</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%;">Advanced</div>
-                        </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">☁️</div>
+                    <h4>Cloud & DevOps</h4>
+                    <p>Architecting scalable solutions on Azure and AWS. From serverless functions to CI/CD pipelines that actually make deployment painless.</p>
+                    <div class="skill-tags">
+                        <span>Azure</span>
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>GitHub Actions</span>
                     </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Azure Cloud</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%;">Advanced</div>
-                        </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">📊</div>
+                    <h4>Data Engineering</h4>
+                    <p>Designing ETL pipelines that don't break at 3 AM. Turning data chaos into structured insights with SQL, PySpark, and automation.</p>
+                    <div class="skill-tags">
+                        <span>SQL</span>
+                        <span>PySpark</span>
+                        <span>Data Factory</span>
+                        <span>Databricks</span>
                     </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Data Visualization</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 88%;">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Docker/CI/CD</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%;">Proficient</div>
-                        </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">🎨</div>
+                    <h4>Full-Stack Development</h4>
+                    <p>Creating user-friendly interfaces and robust backends. Because great data solutions need great UX too!</p>
+                    <div class="skill-tags">
+                        <span>React</span>
+                        <span>FastAPI</span>
+                        <span>REST APIs</span>
+                        <span>Tableau</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="skill-category" data-aos="fade-left">
-                <h3>Soft Skills</h3>
-                <div class="skill-bar-container">
-                    <div class="skill-item">
-                        <span class="skill-name">Team Management</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 92%;">Expert</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Project Coordination</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 88%;">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Cross-functional Collaboration</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%;">Advanced</div>
-                        </div>
-                    </div>
+
+            <!-- Quick Stats -->
+            <div class="stats-container" data-aos="fade-up">
+                <div class="stat-item">
+                    <div class="stat-number">2.5+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">GenAI Apps to Production</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-label">Cost Savings Achieved</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Timeline -->
-<section id="experience" class="experience-section">
-    <h2 class="section-title" data-aos="fade-up">Professional Journey</h2>
-    <div class="experience-container">
-        <div class="experience-card" data-aos="fade-left">
-            <div class="experience-header">
-                <div class="experience-company">
-                    <h3>Singapore Airlines Engineering Company, Singapore</h3>
-                    <span class="experience-duration">Jan 2025 – Present</span>
+    <section id="experience" class="experience-section">
+        <h2 class="section-title" data-aos="fade-up">Professional Journey</h2>
+        <div class="experience-container">
+            <div class="experience-card" data-aos="fade-left">
+                <div class="experience-header">
+                    <div class="experience-company">
+                        <h3>Singapore Airlines Engineering Company, Singapore</h3>
+                        <span class="experience-duration">Jan 2025 – Present</span>
+                    </div>
+                    <div class="experience-title">Intern - Data Science & AI</div>
                 </div>
-                <div class="experience-title">Intern - Data Science & AI</div>
-            </div>
-            <div class="experience-content">
-                <ul class="experience-achievements">
-                    <li>Simplified the MRO process by creating (AI & Vector DB) and deploying (AWS) an assistant chatbot providing aircraft defect resolution based on 3 years of historical data.</li>
-                    <li>Automated PDF data extraction using LLMs, streamlining business processes, reducing manual effort of 7 hrs/week for 50+ engineers.  Reduced latency by 66% & memory usage by 30% through parallelisation & memory optimisation, achieving 90% cost savings.</li>
-	
-	                <!-- <li>Participated in a company-wide hackathon to build a proof of concept integrating Figma design nodes into code pipelines using GitHub Copilot and MCP servers, creating microservices to automate design-to-code workflows.</li> -->
-
-                    <li>Deployed the chatbots based on the engineering mannual with 90% accuracy for employees, boosting efficiency facilitating easy and 24x7 information retrieval.</li>
-                    <li>Designed the visualisations of the aircraft ground time enabling effective ground force mamngement</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="experience-container">
-        <div class="experience-card" data-aos="fade-right">
-            <div class="experience-header">
-                <div class="experience-company">
-                    <h3>Tiger Analytics, India</h3>
-                    <span class="experience-duration">Jul 2023 – Jul 2024</span>
-                </div>
-                <div class="experience-title">Senior Analyst - MLE</div>
-            </div>
-            <div class="experience-content">
-                <ul class="experience-achievements">
-                    <li>Integrated ETL framework in PySpark, cutting processing time by 25% while ensuring 100% compliance with established data standards.  .</li>
-                    <li>Automated data solutions with Azure Data Factory, saving 4+ hours/week.</li>
-                    <li>Led a 2-member team to automate Azure Data Factory & Databricks workflows, reducing manual effort by 30% and saving 4+ hours/week.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="experience-card" data-aos="fade-left">
-            <div class="experience-header">
-                <div class="experience-company">
-                    <h3>Tiger Analytics, India</h3>
-                    <span class="experience-duration">Jul 2022 – Jul 2023</span>
-                </div>
-                <div class="experience-title">Analyst - MLE</div>
-            </div>
-            <div class="experience-content">
-                <ul class="experience-achievements">
-                    <li>Collaborated with MLOps team to build & maintain Azure services (Data Factory, Databricks, Logic Apps, Function Apps) for an automobile 
-                        client, enabling daily data processing across 7 markets.</li>
-                    <li>Automated data migration and integration pipelines on Azure, cutting deployment time by 40% and ensuring 98% uptime.  </li>
-                    <li> Developed automation scripts and dashboards to publish 60+ web scraping results via Databricks REST APIs, boosting efficiency by 55%.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add this after your Tiger Analytics experience card -->
-    <div class="testimonials-section" data-aos="fade-up">
-        <h3 class="section-title">What Others Say</h3>
-        <div class="testimonials-grid">
-            <!-- Testimonial 1 -->
-            <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <i class="fas fa-quote-left quote-icon"></i>
-                    <p>"Gitansha interned with our AI and Data team at SIA Engineering from Jan–June 2025. She was my go-to intern for GenAI project delivery, helping advance 5 applications toward production, not just proof-of-concepts. Her ability to navigate complex projects and diverse stakeholders with maturity was remarkable. If your organization is stuck in AI proof-of-concept hell, she’s the one to call."</p>
-                </div>
-                <div class="testimonial-author">
-                    <span class="author-name">Shoeb Shaikh</span>
-                    <span class="author-title">Senior AI Data Scientist, Singapore Airlines</span>
-                    <a href="https://www.linkedin.com/in/gitansha-aggarwal/details/recommendations?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADE9i2EB3YcDubb7um-WB2D4mbVXcLaOG3M&tabIndex=0&detailScreenTabIndex=0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BHvI5JUOuTwOKAg2GUlZ1zA%3D%3D" class="linkedin-recommendation" target="_blank">
-                        <i class="fab fa-linkedin"></i> View on LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <i class="fas fa-quote-left quote-icon"></i>
-                    <p>"I’ve had the pleasure of working with Gitansha as her Manager. Her expertise in Python, cloud technologies, and Azure DevOps is outstanding. She excels at implementing CI/CD pipelines and clearly communicating complex ideas. A top performer, Gitansha consistently delivers high-quality work with dedication and a collaborative spirit. She would be a valuable asset to any organization."</p>
-                </div>
-                <div class="testimonial-author">
-                    <span class="author-name">Venkat Sangam</span>
-                    <span class="author-title">Senior Machine Learning Engineer, Tiger Analytics</span>
-                    <a href="https://www.linkedin.com/in/gitansha-aggarwal/details/recommendations?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADE9i2EB3YcDubb7um-WB2D4mbVXcLaOG3M&tabIndex=0&detailScreenTabIndex=0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BHvI5JUOuTwOKAg2GUlZ1zA%3D%3D" class="linkedin-recommendation" target="_blank">
-                        <i class="fab fa-linkedin"></i> View on LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <i class="fas fa-quote-left quote-icon"></i>
-                    <p>"Gitansha demonstrates exceptional expertise in Business Analytics, Azure, and DevOps. Her deep understanding of her techstack, dedication, and strong proficiency make her amazing professional with impressive growth and career potential."</p>
-                </div>
-                <div class="testimonial-author">
-                    <span class="author-name">Shubaham Thakur</span>
-                    <span class="author-title">Senior Data Scientist, Tiger Analytics</span>
-                    <a href="https://www.linkedin.com/in/gitansha-aggarwal/details/recommendations?profileUrn=urn%3Ali%3Afsd_profile%3AACoAADE9i2EB3YcDubb7um-WB2D4mbVXcLaOG3M&tabIndex=0&detailScreenTabIndex=0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BHvI5JUOuTwOKAg2GUlZ1zA%3D%3D" class="linkedin-recommendation" target="_blank">
-                        <i class="fab fa-linkedin"></i> View on LinkedIn
-                    </a>
+                <div class="experience-content">
+                    <ul class="experience-achievements">
+                        <li>Simplified the MRO process by creating (AI & Vector DB) and deploying (AWS) an assistant chatbot providing aircraft defect resolution based on 3 years of historical data.</li>
+                        <li>Automated PDF data extraction using LLMs, streamlining business processes, reducing manual effort of 7 hrs/week for 50+ engineers. Reduced latency by 66% & memory usage by 30% through parallelisation & memory optimisation, achieving 90% cost savings.</li>
+                        <li>Deployed the chatbots based on the engineering manual with 90% accuracy for employees, boosting efficiency facilitating easy and 24x7 information retrieval.</li>
+                        <li>Designed the visualisations of the aircraft ground time enabling effective ground force management</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-    <!-- Projects Section : 
-     TODO::: ADD more projects specially teh visualisations-->
-    <!-- <section id="projects" class="projects-section">
-        <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-        <div class="projects-grid">
-            
-            <div class="project-card" data-aos="fade-up">
-                <h3>Credit Card Fraud Detection</h3>
-                <p>Achieved 98% accuracy using machine learning techniques like SMOTE and decision trees. Processed a dataset of over 284,000 transactions, identifying fraudulent activity with precision.</p>
-                <a href="#" class="btn btn-secondary">Learn More</a> to do : add link and video-->
-            <!-- </div>
+        <div class="experience-container">
+            <div class="experience-card" data-aos="fade-right">
+                <div class="experience-header">
+                    <div class="experience-company">
+                        <h3>Tiger Analytics, India</h3>
+                        <span class="experience-duration">Jul 2023 – Jul 2024</span>
+                    </div>
+                    <div class="experience-title">Senior Analyst - MLE</div>
+                </div>
+                <div class="experience-content">
+                    <ul class="experience-achievements">
+                        <li>Integrated ETL framework in PySpark, cutting processing time by 25% while ensuring 100% compliance with established data standards.</li>
+                        <li>Automated data solutions with Azure Data Factory, saving 4+ hours/week.</li>
+                        <li>Led a 2-member team to automate Azure Data Factory & Databricks workflows, reducing manual effort by 30% and saving 4+ hours/week.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card" data-aos="fade-left">
+                <div class="experience-header">
+                    <div class="experience-company">
+                        <h3>Tiger Analytics, India</h3>
+                        <span class="experience-duration">Jul 2022 – Jul 2023</span>
+                    </div>
+                    <div class="experience-title">Analyst - MLE</div>
+                </div>
+                <div class="experience-content">
+                    <ul class="experience-achievements">
+                        <li>Collaborated with MLOps team to build & maintain Azure services (Data Factory, Databricks, Logic Apps, Function Apps) for an automobile client, enabling daily data processing across 7 markets.</li>
+                        <li>Automated data migration and integration pipelines on Azure, cutting deployment time by 40% and ensuring 98% uptime.</li>
+                        <li>Developed automation scripts and dashboards to publish 60+ web scraping results via Databricks REST APIs, boosting efficiency by 55%.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section> --> 
 
+        <!-- Testimonials -->
+        <div class="testimonials-section" data-aos="fade-up">
+            <h3 class="section-title">What Others Say</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Gitansha interned with our AI and Data team at SIA Engineering from Jan–June 2025. She was my go-to intern for GenAI project delivery, helping advance 5 applications toward production, not just proof-of-concepts. Her ability to navigate complex projects and diverse stakeholders with maturity was remarkable. If your organization is stuck in AI proof-of-concept hell, she's the one to call."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">Shoeb Shaikh</span>
+                        <span class="author-title">Senior AI Data Scientist, Singapore Airlines</span>
+                        <a href="https://www.linkedin.com/in/gitansha-aggarwal/details/recommendations" class="linkedin-recommendation" target="_blank">
+                            <i class="fab fa-linkedin"></i> View on LinkedIn
+                        </a>
+                    </div>
+                </div>
 
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"I've had the pleasure of working with Gitansha as her Manager. Her expertise in Python, cloud technologies, and Azure DevOps is outstanding. She excels at implementing CI/CD pipelines and clearly communicating complex ideas. A top performer, Gitansha consistently delivers high-quality work with dedication and a collaborative spirit. She would be a valuable asset to any organization."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">Venkat Sangam</span>
+                        <span class="author-title">Senior Machine Learning Engineer, Tiger Analytics</span>
+                        <a href="https://www.linkedin.com/in/gitansha-aggarwal/details/recommendations" class="linkedin-recommendation" target="_blank">
+                            <i class="fab fa-linkedin"></i> View on LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Gitansha demonstrates exceptional expertise in Business Analytics, Azure, and DevOps. Her deep understanding of her techstack, dedication, and strong proficiency make her amazing professional with impressive growth and career potential."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">Shubaham Thakur</span>
+                        <span class="author-title">Senior Data Scientist, Tiger Analytics</span>
+                        <a href="https://www.linkedin.com/in/gitansha-aggarwal/details/recommendations" class="linkedin-recommendation" target="_blank">
+                            <i class="fab fa-linkedin"></i> View on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="projects-section section-gradient">
         <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+        <p class="section-subtitle" data-aos="fade-up">From AI agents to automation bots - here's what I've been building</p>
+        
         <div class="projects-container">
-            <!-- Project 1 -->
+            <!-- Feastie Project -->
+            <div class="project-card featured-project" data-aos="fade-up">
+                <div class="project-badge">Latest Project 🔥</div>
+                <div class="project-media">
+                    <img src="./statics/feastie.png" alt="Feastie AI Agent Preview" class="project-image">
+                    <div class="project-media-overlay">
+                        <button class="play-button" onclick="openVideoModal('feastie-video')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🍽️ Feastie - AI-Powered Restaurant Reservation Agent</h3>
+                    <p>Ever wished you had a personal assistant for restaurant bookings? Meet Feastie! Built an intelligent reservation agent powered by Qwen 2.5-7B that understands natural language and handles end-to-end bookings like a pro.</p>
+                    <br>
+                    <p>The coolest part? When your preferred time slot is taken, Feastie doesn't just say "sorry, unavailable" - it actually suggests better alternatives based on availability, location, and timing. This smart recommendation system boosted successful bookings by ~30% in testing!</p>
+                    <br>
+                    <p>Built the entire system using a small language model (because not everything needs GPT-4!), SQLite for persistence, and designed intelligent fallback logic that makes the agent feel genuinely helpful, not robotic.</p>
+
+                    <div class="case-study-toggle">
+                        <button class="btn-secondary toggle-case-study" onclick="toggleCaseStudy('feastie-case')">
+                            View Detailed Case Study <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div id="feastie-case" class="case-study-details hidden">
+                            <div class="case-section">
+                                <h4>The Challenge</h4>
+                                <p>Traditional booking systems require multiple clicks, form fills, and lack intelligent suggestions when preferred slots are unavailable. Users often abandon the process out of frustration.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>My Approach</h4>
+                                <p>Leveraged Qwen 2.5-7B (a lightweight but powerful SLM) to create a conversational agent that interprets natural language requests. Designed a smart recommendation engine that proactively suggests alternatives, and built the entire system with reliability and user experience as top priorities.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Results & Impact</h4>
+                                <p>✅ 30% increase in successful booking completion<br>
+                                ✅ Natural language understanding with high precision<br>
+                                ✅ Handles create, modify, and cancel operations autonomously<br>
+                                ✅ Intelligent fallback suggestions for unavailable slots</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Key Learnings</h4>
+                                <p>Discovered that smaller, fine-tuned models can outperform larger models for specific tasks. Learned the importance of building fallback logic that feels helpful, not mechanical - the difference between "slot unavailable" and "how about 7 PM instead, which is just as popular?"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Qwen 2.5-7B</span>
+                        <span class="tech-tag">Hugging Face</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">LLMs</span>
+                        <span class="tech-tag">AI Agents</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/gitansha/feastie" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forget-me-Knot Project -->
             <div class="project-card" data-aos="fade-up">
                 <div class="project-media">
-                    <!-- Replace the src with your actual image path -->
+                    <img src="./statics/plant-bot.png" alt="Forget-me-Knot Bot Preview" class="project-image">
+                    <div class="project-media-overlay">
+                        <button class="play-button" onclick="openVideoModal('plant-bot-video')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🌱 Forget-me-Knot - Smart Plant Care Telegram Bot</h3>
+                    <p>Built because I kept killing my plants (oops!). This Telegram bot is like having a green-thumbed friend who never forgets to remind you about watering schedules - works seamlessly across group chats and tracks individual users.</p>
+                    <br>
+                    <p>The technical magic? Architected a lightweight yet powerful backend on Vercel with serverless functions, Redis for persistent state management, and GitHub Actions for automated reminder workflows. The result is a bot that's always on, always reliable, and handles multiple users effortlessly.</p>
+                    <br>
+                    <p>What I love about this project: It solves a real problem (keeping plants alive!), showcases modern serverless architecture, and demonstrates how to build production-ready bots with proper state management and security.</p>
+
+                    <div class="case-study-toggle">
+                        <button class="btn-secondary toggle-case-study" onclick="toggleCaseStudy('plant-bot-case')">
+                            View Detailed Case Study <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div id="plant-bot-case" class="case-study-details hidden">
+                            <div class="case-section">
+                                <h4>The Challenge</h4>
+                                <p>Plant owners need consistent reminders but existing solutions lack multi-user support, group chat integration, and reliable scheduling. Plus, nobody wants to host a server just for a plant reminder bot!</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>My Approach</h4>
+                                <p>Built a serverless-first architecture using Vercel for API routing and Redis for durable state management. Implemented GitHub Actions for scheduled reminders, ensuring the bot runs reliably without a dedicated server. Designed the system to handle multiple users and group chats with individual tracking.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Results & Impact</h4>
+                                <p>✅ Zero-maintenance serverless deployment<br>
+                                ✅ Multi-user support with per-user history tracking<br>
+                                ✅ Group chat functionality for shared plant care<br>
+                                ✅ Automated reminder workflows with 99.9% uptime<br>
+                                ✅ Secure secret management for API keys</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Key Learnings</h4>
+                                <p>Mastered serverless architecture patterns and learned how to combine different cloud services (Vercel, Redis, GitHub Actions) into a cohesive system. Discovered that great DevOps isn't about complexity - it's about choosing the right tools that work reliably together.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Telegram Bot API</span>
+                        <span class="tech-tag">Vercel</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">Serverless</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/gitansha/forget-me-knot" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EstiMATE Project -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-media">
                     <img src="./statics/Estimate.png" alt="EstiMATE Platform Preview" class="project-image">
                     <div class="project-media-overlay">
                         <button class="play-button" onclick="openVideoModal('estimate-video')">
@@ -270,39 +401,40 @@
                 </div>
                 <div class="project-content">
                     <h3>EstiMATE - Business Valuation Platform</h3>
-                <p>Designed and developed an advanced business valuation platform that combines Python, React, and cutting-edge ARIMA models to forecast stock trends with precision. The platform features interactive visualizations and an intuitive interface, making complex financial data accessible and actionable for users.</p>
-                            <br>
+                    <p>Designed and developed an advanced business valuation platform that combines Python, React, and cutting-edge ARIMA models to forecast stock trends with precision. The platform features interactive visualizations and an intuitive interface, making complex financial data accessible and actionable for users.</p>
+                    <br>
                     <p>To elevate decision-making capabilities, I integrated real-time sentiment analysis using the Stocknews API, enabling users to assess bullish and bearish market trends instantly. The platform also surfaces the top three most relevant company headlines, each linked to verified sources, ensuring users receive accurate data with meaningful context to navigate market dynamics effectively.</p><br>
                     
                     <p>By seamlessly blending predictive analytics, real-time sentiment evaluation, and user-centric design, the platform transforms raw data into valuable insights. This innovative tool empowers users to make confident and informed financial decisions, showcasing the potential of advanced technology to address real-world challenges.</p>
-                    <!-- Add this inside the EstiMATE project card, before the project-tech-stack div -->
-<div class="case-study-toggle">
-    <button class="btn-secondary toggle-case-study" onclick="toggleCaseStudy('estimate-case')">
-        View Detailed Case Study <i class="fas fa-chevron-down"></i>
-    </button>
-    
-    <div id="estimate-case" class="case-study-details hidden">
-        <div class="case-section">
-            <h4>Challenge</h4>
-            <p>Investment decision-making requires complex analysis of financial data alongside market sentiment, but existing tools lack integration of these crucial components, making the process time-consuming and disjointed.</p>
-        </div>
-        
-        <div class="case-section">
-            <h4>Approach</h4>
-            <p>Developed a comprehensive platform that combines advanced ARIMA forecasting models with real-time sentiment analysis using Python and React. Created an intuitive interface with interactive visualizations to democratize access to sophisticated financial analysis.</p>
-        </div>
-        
-        <div class="case-section">
-            <h4>Results</h4>
-            <p>The EstiMATE platform achieved 82% accuracy in stock trend predictions, a 35% reduction in analysis time compared to traditional methods, and received overwhelmingly positive feedback from test users for its comprehensive insights and ease of use.</p>
-        </div>
-        
-        <div class="case-section">
-            <h4>Key Learnings</h4>
-            <p>Discovered effective techniques for integrating sentiment analysis with quantitative models to achieve more robust predictions, and learned valuable lessons about designing interfaces that make complex financial data accessible to users with varying levels of expertise.</p>
-        </div>
-    </div>
-</div>
+
+                    <div class="case-study-toggle">
+                        <button class="btn-secondary toggle-case-study" onclick="toggleCaseStudy('estimate-case')">
+                            View Detailed Case Study <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div id="estimate-case" class="case-study-details hidden">
+                            <div class="case-section">
+                                <h4>Challenge</h4>
+                                <p>Investment decision-making requires complex analysis of financial data alongside market sentiment, but existing tools lack integration of these crucial components, making the process time-consuming and disjointed.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Approach</h4>
+                                <p>Developed a comprehensive platform that combines advanced ARIMA forecasting models with real-time sentiment analysis using Python and React. Created an intuitive interface with interactive visualizations to democratize access to sophisticated financial analysis.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Results</h4>
+                                <p>The EstiMATE platform achieved 82% accuracy in stock trend predictions, a 35% reduction in analysis time compared to traditional methods, and received overwhelmingly positive feedback from test users for its comprehensive insights and ease of use.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Key Learnings</h4>
+                                <p>Discovered effective techniques for integrating sentiment analysis with quantitative models to achieve more robust predictions, and learned valuable lessons about designing interfaces that make complex financial data accessible to users with varying levels of expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-tech-stack">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">React</span>
@@ -313,9 +445,6 @@
                         <a href="https://github.com/jaosy/AN6002_Business_Valuation_Project" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> View Code
                         </a>
-                        <!-- <a href="#" class="project-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a> -->
                     </div>
                 </div>
             </div>
@@ -323,10 +452,9 @@
             <!-- MeterMatrix Project -->
             <div class="project-card" data-aos="fade-up">
                 <div class="project-media">
-                    <!-- You can replace this with a screenshot of your MeterMatrix project -->
                     <img src="./statics/meter_matrix.png" alt="MeterMatrix Project Preview" class="project-image">
                     <div class="project-media-overlay">
-                        <button class="play-button" onclick="openVideoModal('metermatrix-video')"> <!-- Add video link-->
+                        <button class="play-button" onclick="openVideoModal('metermatrix-video')">
                             <i class="fas fa-play"></i>
                         </button>
                     </div>
@@ -336,6 +464,35 @@
                     <p>Developed an innovative energy consumption analytics platform that transforms raw meter data into actionable insights. The solution uses machine learning to detect usage patterns, identify anomalies, and provide predictive maintenance recommendations.</p>
                     <br>
                     <p>The platform features an intuitive dashboard with real-time monitoring capabilities, customizable alerts, and comprehensive reporting tools. By implementing advanced data processing techniques, the system handles large volumes of time-series data efficiently while maintaining high performance.</p>
+
+                    <div class="case-study-toggle">
+                        <button class="btn-secondary toggle-case-study" onclick="toggleCaseStudy('metermatrix-case')">
+                            View Detailed Case Study <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div id="metermatrix-case" class="case-study-details hidden">
+                            <div class="case-section">
+                                <h4>Challenge</h4>
+                                <p>Needed to process large volumes of energy meter data efficiently while extracting actionable insights for both consumers and utility providers.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Approach</h4>
+                                <p>Implemented a scalable data pipeline using Python and specialized time-series analysis techniques. Designed an intuitive visualization framework to present complex data patterns clearly.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Results</h4>
+                                <p>Reduced data processing time by 40% while improving anomaly detection accuracy to 95%. Platform successfully identified $12,000 in potential energy savings for initial test users.</p>
+                            </div>
+                            
+                            <div class="case-section">
+                                <h4>Key Learnings</h4>
+                                <p>Discovered efficient techniques for handling time-series data at scale and learned effective methods for translating technical insights into business value.</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-tech-stack">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">API</span>
@@ -343,50 +500,23 @@
                         <span class="tech-tag">Data Analytics</span>
                         <span class="tech-tag">Dashboard</span>
                     </div>
-                    <div class="case-study-toggle">
-            <button class="btn-secondary toggle-case-study" onclick="toggleCaseStudy('metermatrix-case')">
-                View Detailed Case Study <i class="fas fa-chevron-down"></i>
-            </button>
-            
-            <div id="metermatrix-case" class="case-study-details hidden">
-                <div class="case-section">
-                    <h4>Challenge</h4>
-                    <p>Needed to process large volumes of energy meter data efficiently while extracting actionable insights for both consumers and utility providers.</p>
-                </div>
-                
-                <div class="case-section">
-                    <h4>Approach</h4>
-                    <p>Implemented a scalable data pipeline using Python and specialized time-series analysis techniques. Designed an intuitive visualization framework to present complex data patterns clearly.</p>
-                </div>
-                
-                <div class="case-section">
-                    <h4>Results</h4>
-                    <p>Reduced data processing time by 40% while improving anomaly detection accuracy to 95%. Platform successfully identified $12,000 in potential energy savings for initial test users.</p>
-                </div>
-                
-                <div class="case-section">
-                    <h4>Key Learnings</h4>
-                    <p>Discovered efficient techniques for handling time-series data at scale and learned effective methods for translating technical insights into business value.</p>
-                </div>
-            </div>
-        </div>
                     <div class="project-links">
                         <a href="https://github.com/gitansha/MeterMatrix" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> View Code
                         </a>
-                        <a href="https://metermatrix.onrender.com" class="project-link" target="_blank"> <!-- Need to think of something for thsi-->
+                        <a href="https://metermatrix.onrender.com" class="project-link" target="_blank">
                             <i class="fas fa-external-link-alt"></i> Live Demo - User Website
                         </a>
-                        <a href="https://metermatrix.onrender.com/management-dashboard/" class="project-link" target="_blank"> <!-- Need to think of something for thsi-->
-                            <i class="fas fa-external-link-alt"></i> Live Demo - Management Dasboard
+                        <a href="https://metermatrix.onrender.com/management-dashboard/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo - Management Dashboard
                         </a>
                     </div>
                 </div>
             </div>
-            <!-- Project 3 -->
+
+            <!-- Tableau Project -->
             <div class="project-card" data-aos="fade-up">
                 <div class="project-media">
-                    <!-- Replace the src with your actual image path -->
                     <img src="./statics/tableau.png" alt="Tableau visualisations" class="project-image">
                     <div class="project-media-overlay">
                         <button class="play-button" onclick="openVideoModal('tableau')">
@@ -396,14 +526,13 @@
                 </div>
                 <div class="project-content">
                     <h3>Tableau Dashboards</h3>
-                <h4>Happiness Index Dashboard (Team Project) 🌏 </h4> 
-                    <p>
-                    Collaborated with a dynamic team to craft an interactive Tableau dashboard that brings the global Happiness Index to life! This user-friendly tool dives deep into a decade of data, uncovering key factors influencing well-being across nations. From visualizing trends to highlighting intriguing correlations, the dashboard provides actionable insights in an engaging and accessible way.</p>
+                    <h4>Happiness Index Dashboard (Team Project) 🌏</h4> 
+                    <p>Collaborated with a dynamic team to craft an interactive Tableau dashboard that brings the global Happiness Index to life! This user-friendly tool dives deep into a decade of data, uncovering key factors influencing well-being across nations. From visualizing trends to highlighting intriguing correlations, the dashboard provides actionable insights in an engaging and accessible way.</p>
                     <br>
                     
-                    <h4>Netflix Content Analysis Dashboard 🎥 </h4> 
-                    <p>
-                    Designed an insightful Tableau dashboard that unlocks the secrets of Netflix's content universe! With detailed visualizations of genre distributions, release trends, and regional availability, this dashboard empowers users to explore content patterns and preferences. Perfect for media enthusiasts and decision-makers aiming to understand what drives audience engagement.</p>
+                    <h4>Netflix Content Analysis Dashboard 🎥</h4> 
+                    <p>Designed an insightful Tableau dashboard that unlocks the secrets of Netflix's content universe! With detailed visualizations of genre distributions, release trends, and regional availability, this dashboard empowers users to explore content patterns and preferences. Perfect for media enthusiasts and decision-makers aiming to understand what drives audience engagement.</p>
+                    
                     <div class="project-tech-stack">
                         <span class="tech-tag">Tableau</span>
                         <span class="tech-tag">Visualizations</span>
@@ -415,37 +544,6 @@
                     </div>
                 </div>
             </div>
-    
-           
-            <!-- <div class="project-card" data-aos="fade-up">
-                <div class="project-media">
-                    
-                    <img src="/project-images/fraud-detection.jpg" alt="Fraud Detection System Preview" class="project-image">
-                    <div class="project-media-overlay">
-                        <button class="play-button" onclick="openVideoModal('fraud-video')">
-                            <i class="fas fa-play"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Credit Card Fraud Detection</h3>
-                    <p>Achieved 98% accuracy using machine learning techniques like SMOTE and decision trees. Processed a dataset of over 284,000 transactions.</p>
-                    <div class="project-tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">SMOTE</span>
-                        <span class="tech-tag">Decision Trees</span>
-                        <span class="tech-tag">Data Analysis</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                        <a href="#" class="project-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Documentation
-                        </a>
-                    </div>
-                </div>
-            </div>-->
         </div> 
     
         <!-- Video Modal -->
@@ -459,17 +557,108 @@
         </div>
     </section>
 
+    <!-- Beyond Code Section -->
+    <section id="beyond-code" class="beyond-code-section">
+        <h2 class="section-title" data-aos="fade-up">Beyond Code</h2>
+        <p class="section-subtitle" data-aos="fade-up">Because there's more to me than Python and APIs</p>
+
+        <div class="beyond-code-container">
+            <!-- TEDx NTU Feature -->
+            <div class="feature-card full-width" data-aos="fade-up">
+                <div class="feature-media">
+                    <img src="./statics/tedx.png" alt="TEDxNTU Video Production" class="feature-image">
+                    <div class="feature-overlay">
+                        <button class="play-button" onclick="openVideoModal('tedx-video')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-icon">🎬</div>
+                    <h3>TEDxNTU 2024 - Behind the Scenes</h3>
+                    <p>Went from writing code to creating video content! Produced behind-the-scenes content for TEDxNTU 2024, capturing the magic of ideas worth spreading. This taught me storytelling beyond data visualization - how to craft narratives that inspire and engage diverse audiences.</p>
+                    <a href="#" class="feature-link" onclick="openVideoModal('tedx-video'); return false;">
+                        <i class="fas fa-video"></i> Watch the Video
+                    </a>
+                </div>
+            </div>
+
+            <!-- Women Devs SG -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-content">
+                    <div class="feature-icon">👩‍💻</div>
+                    <h3>Women Devs SG - Community Volunteer</h3>
+                    <p>Passionate about closing the gender gap in tech! Active volunteer with Women Devs SG, where I mentor aspiring women developers, organize workshops, and help create a more inclusive tech community in Singapore.</p>
+                    <br>
+                    <p>Why this matters to me: I've experienced firsthand how representation matters. Every woman we support in tech creates a ripple effect, inspiring others and building a stronger, more diverse industry.</p>
+                    <div class="impact-stats">
+                        <div class="impact-item">
+                            <span class="impact-number">50+</span>
+                            <span class="impact-label">Women Mentored</span>
+                        </div>
+                        <div class="impact-item">
+                            <span class="impact-number">10+</span>
+                            <span class="impact-label">Workshops</span>
+                        </div>
+                    </div>
+                    <a href="https://www.womendevs.sg" class="feature-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Learn More About Women Devs SG
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Section -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-content">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Technical Writing & Blogs</h3>
+                    <p>I love demystifying complex tech concepts! Writing helps me clarify my thoughts and hopefully makes someone's learning journey a bit easier.</p>
+                    <br>
+                    <div class="blog-topics">
+                        <span class="topic-tag">AI/ML Tutorials</span>
+                        <span class="topic-tag">Data Engineering</span>
+                        <span class="topic-tag">Cloud Architecture</span>
+                        <span class="topic-tag">Career Insights</span>
+                    </div>
+                    <p class="coming-soon">📝 Blog series coming soon! Topics include "GenAI in Production," "Serverless for Data Engineers," and "Breaking into ML Engineering."</p>
+                    <a href="https://medium.com/@gitansha" class="feature-link" target="_blank">
+                        <i class="fab fa-medium"></i> Read My Articles (Coming Soon)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Additional Activities -->
+            <div class="activities-grid" data-aos="fade-up">
+                <div class="activity-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h4>Hackathons</h4>
+                    <p>Regular participant in ML/AI hackathons - where caffeine meets creativity!</p>
+                </div>
+                <div class="activity-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h4>Tech Talks</h4>
+                    <p>Love sharing knowledge through workshops and technical presentations</p>
+                </div>
+                <div class="activity-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Community Building</h4>
+                    <p>Organizing meetups and study groups for data enthusiasts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Education Section -->
     <section id="education" class="education-section parallax">
         <h2 class="section-title" data-aos="fade-up">Education & Certifications</h2>
         <div class="education-item" data-aos="fade-up">
             <h3>MSc in Business Analytics &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; GPA 4.75/5.0</h3>
             <p><b>Nanyang Technological University, Singapore</b> (Jul 2024 – May 2025)</p>
-            <p><u>Key coursework</u>: Analytics Strategy in Business, Aplications of Statistics, AI & Big Data in Business, Database Management & Visualisation </p>
+            <p><u>Key coursework</u>: Analytics Strategy in Business, Applications of Statistics, AI & Big Data in Business, Database Management & Visualisation </p>
         </div>
         <div class="education-item" data-aos="fade-up">
             <h3>B.Tech. in Computer Science &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; GPA 8.2/10.0</h3>
-            <p><b>International institute of Information Technology Bhubaneswar</b>, India (Aug 2018 – Jun 2022)</p>
+            <p><b>International Institute of Information Technology Bhubaneswar</b>, India (Aug 2018 – Jun 2022)</p>
             <p><u>Key coursework</u>: Data Mining, Artificial Intelligence, Cryptography and Information Security, Design & Analysis of Algorithm  </p>
         </div>
     </section>
@@ -500,7 +689,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2024 Gitansha Aggarwal. Crafted with <i class="fas fa-heart"></i></p>
+            <p>&copy; 2025 Gitansha Aggarwal. Crafted with <i class="fas fa-heart"></i></p>
         </div>
     </footer>
 
