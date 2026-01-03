@@ -107,7 +107,7 @@ function openVideoModal(videoId) {
         'estimate-video': 'https://drive.google.com/file/d/1ggEP0K2_Z_5KIQpZ7opCFBK-U0-alwKN/view',
         'metermatrix-video': 'YOUR_VIDEO_URL_HERE',
         'tableau': 'https://public.tableau.com/app/profile/gitansha.aggarwal/vizzes',
-        'tedx-video': 'YOUR_DROPBOX_LINK_HERE' // Add your TEDx Dropbox link here
+        'tedx-video': 'https://www.dropbox.com/scl/fi/9b7sm7tvi43q5u5cdcvjs/TEDxNTU-BTS.mp4?rlkey=8ejx1uf2p8ie289gnll2jhxgc&st=y5ozu2dh&dl=0' // Add your TEDx Dropbox link here
     };
     
     let videoUrl = videoUrls[videoId];
