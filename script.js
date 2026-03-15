@@ -1,57 +1,68 @@
 // Initialize AOS (Animate On Scroll)
-AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 100
-});
+if (window.innerWidth <= 768) {
+    AOS.init({
+        duration: 500,
+        once: true,
+        offset: 80,
+        disable: true
+    });
+    const particlesElement = document.getElementById('particles-js');
+    if (particlesElement) particlesElement.style.display = 'none';
+} else {
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+    });
 
-// Particle.js Configuration
-particlesJS('particles-js', {
-    particles: {
-        number: { value: 80 },
-        color: { value: '#6b46c1' },
-        shape: { type: 'circle' },
-        opacity: { 
-            value: 0.5,
-            random: true 
-        },
-        size: { 
-            value: 3,
-            random: true 
-        },
-        line_linked: {
-            enable: true,
-            distance: 150,
-            color: '#6b46c1',
-            opacity: 0.2,
-            width: 1
-        },
-        move: {
-            enable: true,
-            speed: 2,
-            direction: 'none',
-            random: false,
-            straight: false,
-            out_mode: 'out',
-            bounce: false
-        }
-    },
-    interactivity: {
-        detect_on: 'canvas',
-        events: {
-            onhover: {
-                enable: true,
-                mode: 'repulse'
+    // Particle.js Configuration
+    particlesJS('particles-js', {
+        particles: {
+            number: { value: 45 },
+            color: { value: '#6b46c1' },
+            shape: { type: 'circle' },
+            opacity: { 
+                value: 0.35,
+                random: true 
             },
-            onclick: {
-                enable: true,
-                mode: 'push'
+            size: { 
+                value: 2.5,
+                random: true 
             },
-            resize: true
-        }
-    },
-    retina_detect: true
-});
+            line_linked: {
+                enable: true,
+                distance: 130,
+                color: '#6b46c1',
+                opacity: 0.15,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 1.5,
+                direction: 'none',
+                random: false,
+                straight: false,
+                out_mode: 'out',
+                bounce: false
+            }
+        },
+        interactivity: {
+            detect_on: 'canvas',
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: 'repulse'
+                },
+                onclick: {
+                    enable: true,
+                    mode: 'push'
+                },
+                resize: true
+            }
+        },
+        retina_detect: true
+    });
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -59,10 +70,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 });
@@ -75,7 +83,6 @@ window.addEventListener('scroll', () => {
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (pageYOffset >= sectionTop - 200) {
             current = section.getAttribute('id');
         }
@@ -88,11 +95,11 @@ window.addEventListener('scroll', () => {
         }
     });
 
-    // Progress bar
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
-    document.getElementById('progressBar').style.width = scrolled + '%';
+    const progressBar = document.getElementById('progressBar');
+    if (progressBar) progressBar.style.width = `${scrolled}%`;
 });
 
 // Video Modal Functions
@@ -208,16 +215,13 @@ function toggleCaseStudy(id) {
 // Contact Form Handling
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
     const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-    
-    // You can integrate with a backend service here (e.g., EmailJS, Formspree, etc.)
-    // For now, we'll just show an alert
-    alert(`Thank you ${name}! Your message has been received. I'll get back to you soon!`);
-    
-    // Reset form
+
+    const subject = encodeURIComponent('Portfolio inquiry from ' + name);
+    const bodyText = `Hi Gitansha,\n\n${message}\n\nThanks! \n\n Regards,\n${name}`;
+    const body = encodeURIComponent(bodyText);
+    window.location.href = `mailto:gitansha001@e.ntu.edu.sg?subject=${subject}&body=${body}`;
     this.reset();
 });
 

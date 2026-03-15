@@ -189,6 +189,19 @@ body {
     transform: translateY(-3px);
 }
 
+.hero-buttons {
+    margin: 1rem 0 1.25rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.hero-buttons .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+}
+
 /* Button Styles */
 .btn {
     display: inline-block;
@@ -1006,7 +1019,7 @@ body {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 1.5rem 0.8rem 0.8rem 0.8rem;
     border: none;
     border-bottom: 2px solid var(--secondary-color);
     background: transparent;
@@ -1023,7 +1036,7 @@ body {
 .form-group label {
     position: absolute;
     left: 0;
-    top: 0.8rem;
+    top: 1.5rem;
     color: var(--secondary-color);
     transition: var(--transition);
     pointer-events: none;
@@ -1065,6 +1078,24 @@ body {
 }
 
 /* Footer */
+.chat-footer {
+    background: rgba(107, 70, 193, 0.1);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.chat-footer-content p {
+    margin: 0;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.chat-footer-content a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .footer {
     background: var(--background-dark);
     color: var(--text-dark);
@@ -1076,6 +1107,26 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.contact-pill {
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border-radius: 999px;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-decoration: none;
+    z-index: 1002;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
 }
 
 .fa-heart {
@@ -1163,6 +1214,23 @@ body {
 
     .activities-grid {
         grid-template-columns: 1fr;
+    }
+
+    #particles-js {
+        display: none;
+    }
+
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .contact-pill {
+        right: 0.6rem;
+        bottom: 0.6rem;
+        padding: 0.45rem 0.9rem;
+        font-size: 0.85rem;
     }
 }
 
